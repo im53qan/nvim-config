@@ -4,3 +4,5 @@
 
 local opt = vim.opt
 opt.autowrite = true
+opt.mouse = ""
+opt.cursorline = false

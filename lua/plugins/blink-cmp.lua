@@ -20,5 +20,19 @@ return {
       ["<C-b>"] = { "scroll_documentation_up", "fallback" },
       ["<C-f>"] = { "scroll_documentation_down", "fallback" },
     },
+    completion = {
+      menu = {
+        border = "rounded",
+        auto_show = false,
+        draw = {
+          columns = {
+            { "label", "label_description", gap = 1 },
+            { "kind_icon", "kind" },
+          },
+        },
+      },
+      documentation = { window = { border = "rounded" } },
+    },
+    signature = { window = { border = "rounded" } },
   },
 }
